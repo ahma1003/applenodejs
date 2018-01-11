@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+  <% include master/masterpage.ejs%>
+    <h1><%= title %></h1>
+
+    <img src="/images/myimage.jpg" width="600" height="400">
+    <h3><%=name%></h3>
+    <ul>
+
+    <% for (var i=0 ;i<10 ; i++){ %>
+
+      <li> <%=i%> I eat you</li>
+
+    <% } %>
+
+    </ul>
+
+  <p>Welcome to <%=title%> home page</p>
+  </body>
+</html>
